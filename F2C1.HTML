@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+</head>
+<body>
+    <center>
+        <h1>HTML5 Canvas -L2-Stroke</h1>
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
+<canvas id="myCanvas1" width="300" height="150" style="border:1px solid grey"></canvas>
+</center>
+
+<script>
+const c=document.getElementById("myCanvas");
+const d=document.getElementById("myCanvas1");
+const ctx=c.getContext("2d");
+const cty=d.getContext("2d");
+
+ctx.beginPath();
+            ctx.moveTo(20,20);
+            ctx.lineTo(20,120);
+            ctx.lineTo(140,120);
+            ctx.lineTo(140,70);
+            ctx.lineTo(60,70);
+            ctx.lineTo(60,20);
+            ctx.lineTo(20,20);
+
+ctx.strokeStyle="black";
+ctx.stroke();
+
+cty.beginPath();
+            cty.moveTo(150,75);
+            cty.lineTo(20,120);
+            cty.lineTo(140,120);
+
+
+cty.fillStyle="red";
+cty.fill();
+
+</script>
+</body>
+</html>
